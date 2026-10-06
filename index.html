@@ -44,7 +44,7 @@ src="https://www.facebook.com/tr?id=1090100676877179&ev=PageView&noscript=1"
     </button>
 
     <h3 id="form">Kontakt forma</h3>
-   <form onsubmit="event.preventDefault(); fbq('track', 'Lead'); alert('Test Lead yuborildi!');">
+  <form onsubmit="event.preventDefault(); fbq('track', 'Lead', {value: 10, currency: 'USD'}); alert('Test Lead yuborildi!');">
       <input type="text" placeholder="Ismingiz" required>
       <input type="tel" placeholder="Telefon raqamingiz" required>
       <button class="buy" type="submit">Yuborish</button>

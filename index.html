@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test Product — Pixel Practice</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; }
+    .card { border: 1px solid #ddd; border-radius: 16px; padding: 28px; margin-top: 30px; }
+    .price { font-size: 28px; font-weight: 700; margin: 15px 0; }
+    button { padding: 12px 20px; border: 0; border-radius: 8px; cursor: pointer; margin-right: 8px; }
+    .buy { background: #111; color: white; }
+    input { display: block; width: 100%; max-width: 400px; padding: 12px; margin: 8px 0; box-sizing: border-box; }
+  </style>
+</head>
+<body>
+  <h1>Test Product</h1>
+  <p>Bu sayt Meta Pixel va Events Manager'ni o‘rganish uchun yaratilgan test sayt.</p>
+
+  <div class="card">
+    <h2>Professional Marketing Kursi</h2>
+    <p>Meta Ads Manager bo‘yicha test mahsulot.</p>
+    <div class="price">$10</div>
+
+    <button class="buy" onclick="document.getElementById('form').scrollIntoView()">
+      Sotib olish
+    </button>
+
+    <h3 id="form">Kontakt forma</h3>
+    <form onsubmit="event.preventDefault(); alert('Test Lead yuborildi!');">
+      <input type="text" placeholder="Ismingiz" required>
+      <input type="tel" placeholder="Telefon raqamingiz" required>
+      <button class="buy" type="submit">Yuborish</button>
+    </form>
+  </div>
+</body>
+</html>
